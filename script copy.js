@@ -42,6 +42,9 @@ $(document).ready(async function() {
     // let's build out some stories
     await generateStories();
 
+    // build favorites list
+    addFavoritedArticles(user.favorites);
+    
     // and then display the navigation
     showNavForLoggedInUser();
   } else {
